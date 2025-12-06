@@ -1,0 +1,87 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fce4ec; /* Light Pink Background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 450px;
+    width: 90%;
+    border: 2px solid #ff99bb; /* Cute pink border */
+}
+
+h1 {
+    color: #d81b60; /* Deep Pink Header */
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+p {
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#accessCode {
+    padding: 12px;
+    border: 2px solid #ffb6c1; /* Soft pink input border */
+    border-radius: 8px;
+    font-size: 1em;
+    text-align: center;
+    transition: border-color 0.3s;
+}
+
+#accessCode:focus {
+    border-color: #d81b60;
+    outline: none;
+}
+
+button {
+    background-color: #ff69b4; /* Hot Pink Button */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #c2185b;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#message {
+    height: 20px; /* Reserve space for the message */
+    font-weight: bold;
+}
+
+.hint {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #888;
+    padding: 10px;
+    background-color: #fff0f5; /* Extra light pink background for hint */
+    border-radius: 5px;
+}

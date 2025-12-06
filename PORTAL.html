@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌟 Sow & Send</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // --- IMPORTANT: Set your secret code here ---
+        const SECRET_CODE = "SS001"; 
+
+        function checkCode() {
+            const userInput = document.getElementById('accessCode').value.trim();
+            const messageElement = document.getElementById('message');
+
+            if (userInput === SECRET_CODE) {
+                // Redirect to the exclusive page if the code is correct
+                window.location.href = "exclusive.html";
+            } else {
+                // Show an error message if the code is incorrect
+                messageElement.textContent = "Mã sai rồi! Bạn nhập lại nhé";
+                messageElement.style.color = "#e74c3c"; // Red color for error
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>✨ SOW&SEND ✨</h1>
+        <p>Bạn ơi, bạn hãy nhập <b>mã bí mật</b> trên tờ giấy nằm trong bộ kit của bạn dưới đây để nhận được 1 phần quà nho nhỏ ^^</p>
+        
+        <div class="input-group">
+            <input type="text" id="accessCode" placeholder="Nhập mã tại đây!" required>
+            <button onclick="checkCode()">Check mã...</button>
+        </div>
+        
+        <p id="message"></p>
+        
+    </div>
+</body>
+</html>
